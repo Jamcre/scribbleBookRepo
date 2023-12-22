@@ -28,7 +28,7 @@ function Form() {
     formData.append("desc", desc);
     formData.append("image", file);
 
-    fetch("https://scribblebook-backend.onrender.com", {
+    fetch("https://scribblebook-backend.onrender.com/image", {
       method: "POST",
       body: formData,
     })
