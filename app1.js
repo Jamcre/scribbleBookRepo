@@ -18,15 +18,12 @@ mongoose.connect(process.env.MONGO_URL).then(console.log("DB Connected"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: true,
-    credentials: true,
-    allowedHeaders:
-      "X-Requested-With',X-HTTP-Method-Override,Content-Type,Accept,Authorization",
-    allowedMethods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  })
-);
+app.use(cors({
+  origin: *,
+  credentials: true,
+  allowedHeaders: "X-Requested-With',X-HTTP-Method-Override,Content-Type,Accept,Authorization",
+  allowedMethods: "GET,HEAD,PUT,PATCH,POST,DELETE"
+}));
 
 var multer = require("multer");
 
