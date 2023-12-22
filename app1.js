@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "https://scribblebook-frontend.onrender.com",
+    origin: "*",
     credentials: true,
     allowedHeaders:
       "X-Requested-With',X-HTTP-Method-Override,Content-Type,Accept,Authorization",
