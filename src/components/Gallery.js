@@ -7,7 +7,7 @@ const Gallery = () => {
   const [items, setItems] = useState(null);
   useEffect(() => {
     axios
-      .get("https://scribblebook-backend.onrender.com")
+      .get("https://scribblebook-backend.onrender.com/image")
       .then((res) => {
         setItems(res.data.data);
         console.log(res.data.data);
