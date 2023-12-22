@@ -30,7 +30,7 @@ function Signup() {
 
     try {
       const res = await axios.post(
-        "https://scribbl-backend.onrender.com/signup",
+        "https://scribblebook-backend.onrender.com/signup",
         {
           email,
           password,

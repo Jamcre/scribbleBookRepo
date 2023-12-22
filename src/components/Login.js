@@ -14,10 +14,13 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://scribbl-backend.onrender.com", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://scribblebook-backend.onrender.com",
+        {
+          email,
+          password,
+        }
+      );
       if (res.data === "exist") {
         console.log("User exists");
         history(`/home?id=${email}`);
